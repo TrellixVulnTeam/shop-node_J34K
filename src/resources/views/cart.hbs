@@ -1,0 +1,45 @@
+<div class="cart">
+    <div class="cart-content">
+        <p>Gio hang</p>
+        <form action="" method="post">
+            <table class="td">
+                <thead>
+                    <tr>
+                        <th>Sản phẩm</th>
+                        <th>Số lượng </th>
+                        <th>Đơn giá</th>
+                        <th>Thành tiền</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {{#each carts}}
+                        
+                    
+                    <tr>
+                        <td>
+                            <div class="td-content">
+                                <img src="/img/wb4.jpg" alt="">
+                                <a href="#" class="td-name">{{this.userId}}</a>
+                                <div class="td-delete"><ion-icon name="trash-outline"></ion-icon></div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="td-num">
+                                <div class="td-minus">-</div>
+                                <input type="text" value={{this.quantity}}>
+                                <div class="td-increase">+</div>
+                            </div>
+                        </td>
+                        <td><p>859,500VNĐ</p></td>
+                        <td><p>859,500VNĐ</p></td>
+                    </tr>
+                    {{/each}}
+                </tbody>
+            </table>
+            <div class="td-redirect">
+                <a href="/">Tiếp tục mua hàng</a>
+                <button type="submit" class="td-submit">Thực hiện thanh toán</button>
+            </div>
+        </form>
+    </div>
+</div>

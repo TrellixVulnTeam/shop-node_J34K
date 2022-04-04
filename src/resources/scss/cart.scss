@@ -1,0 +1,114 @@
+.cart {
+  width: 100%;
+  background: white;
+  &-content {
+    width: 1170px;
+    margin: 20px auto;
+    p {
+      font-size: 20px;
+      text-transform: uppercase;
+      font-weight: 500;
+    }
+    form {
+      width: 1170px;
+    }
+  }
+}
+.td {
+  margin-top: 40px;
+  width: 1170px;
+  thead tr {
+    // display: flex;
+    // justify-content: space-around;
+    border: none;
+    background-color: black;
+  }
+  &-delete {
+    cursor: pointer;
+    display: flex;
+    justify-content: flex-end;
+    // margin: 270px 60px;
+    font-size: 20px;
+  }
+  th {
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding: 20px;
+    // border: 1px solid black;
+  }
+  td {
+    text-align: center;
+    color: black;
+    text-transform: uppercase;
+    padding: 10px 20px;
+    border: 1px solid black;
+  }
+  &-num {
+    display: flex;
+    margin-left: 50px;
+    input {
+      width: 50px;
+      height: 34px;
+      text-align: center;
+    }
+  }
+  &-minus,
+  &-increase {
+    width: 34px;
+    height: 34px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border: 1px solid black;
+  }
+  &-name {
+    text-align: left;
+    display: block;
+  }
+  &-redirect {
+    display: flex;
+    margin-top: 20px;
+    height: 50px;
+    align-items: center;
+    a {
+      width: 200px;
+      padding: 12.5px 20px;
+      background: black;
+      color: white;
+      margin-right: 10px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+  &-submit {
+    width: 200px;
+    padding: 10px 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    // font-size: 18px;
+    text-transform: uppercase;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    justify-content: center;
+  }
+  &-content {
+    width: 280px;
+    height: 300px;
+    display: flex;
+    // justify-content: center;
+    flex-direction: column;
+    // float: right;
+
+    img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      //   margin-left: 50px;
+      padding: 10px 0;
+    }
+  }
+}
